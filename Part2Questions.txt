@@ -23,8 +23,14 @@ Apple_e5:66:07,	00:26:08:e5:66:07,
     a. What is the IP address and DNS hostname of the server it connects to?
 	IP: 194.109.21.66, XS4ALL archive
     b. Based on the packet capture, what’s one major vulnerability of the FTP protocol?
+
+    The FTP protocol has unencrypted information. (plaintext)
+
     c. Name at least two other common network protocols that can be used in place of
     FTP to provide secure file transfer.
+
+    UDP and TCP
+
 3. The trace shows that at least one of the clients makes HTTPS connections to sites other
 than Facebook. Pick one of these connections and answer the following:
     a. What is the domain name of the site the client is connecting to?
