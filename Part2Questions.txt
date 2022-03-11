@@ -1,7 +1,27 @@
 1. Multiple devices are connected to the local network. For each one, list their MAC
 address, IP address, and general purpose (personal computer, router, server, etc).
+
+IPv4mcast_fb,	01:00:5e:00:00:fb, 
+Cisco-Li_31:10:7c,	00:12:17:31:10:7c, 
+Cisco_e8:18:00,	00:1f:6d:e8:18:00, 
+IPv4mcast_fc,	01:00:5e:00:00:fc, 
+IPv4mcast_fb,	01:00:5e:00:00:fb, 
+Apple_d8:0f:fa,	04:0c:ce:d8:0f:fa, 
+IPv6mcast_01:00:03,	33:33:00:01:00:03, 
+IPv6mcast_01:00:02,	33:33:00:01:00:02, 
+IntelCor_50:f0:a6,	8c:a9:82:50:f0:a6, 
+Apple_d8:0f:fa,	04:0c:ce:d8:0f:fa, 
+Apple_e5:66:07,	00:26:08:e5:66:07, 
+IPv6mcast_0c,	33:33:00:00:00:0c, 
+IPv4mcast_7f:ff:fa,	01:00:5e:7f:ff:fa, 
+Apple_e5:66:07,	00:26:08:e5:66:07, 
+Apple_e5:66:07,	00:26:08:e5:66:07, 
+
+
+
 2. One of the clients connects to an FTP server during the trace.
     a. What is the IP address and DNS hostname of the server it connects to?
+	IP: 194.109.21.66, XS4ALL archive
     b. Based on the packet capture, what’s one major vulnerability of the FTP protocol?
     c. Name at least two other common network protocols that can be used in place of
     FTP to provide secure file transfer.
