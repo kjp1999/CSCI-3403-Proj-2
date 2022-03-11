@@ -3,8 +3,14 @@ address, IP address, and general purpose (personal computer, router, server, etc
 2. One of the clients connects to an FTP server during the trace.
     a. What is the IP address and DNS hostname of the server it connects to?
     b. Based on the packet capture, what’s one major vulnerability of the FTP protocol?
+
+    The FTP protocol has unencrypted information. (plaintext)
+
     c. Name at least two other common network protocols that can be used in place of
     FTP to provide secure file transfer.
+
+    UDP and TCP
+
 3. The trace shows that at least one of the clients makes HTTPS connections to sites other
 than Facebook. Pick one of these connections and answer the following:
     a. What is the domain name of the site the client is connecting to?
