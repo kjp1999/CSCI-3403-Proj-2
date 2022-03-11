@@ -21,7 +21,8 @@ Apple_e5:66:07,	00:26:08:e5:66:07,
 
 2. One of the clients connects to an FTP server during the trace.
     a. What is the IP address and DNS hostname of the server it connects to?
-	IP: 194.109.21.66, XS4ALL archive
+	IP: 194.109.21.66, DNS Hostname: XS4ALL archive
+
     b. Based on the packet capture, what’s one major vulnerability of the FTP protocol?
 
     The FTP protocol has unencrypted information. (plaintext)
@@ -34,13 +35,20 @@ Apple_e5:66:07,	00:26:08:e5:66:07,
 3. The trace shows that at least one of the clients makes HTTPS connections to sites other
 than Facebook. Pick one of these connections and answer the following:
     a. What is the domain name of the site the client is connecting to?
+	clients4.google.com
     b. Is there any way the HTTPS server can protect against the leak of domain name
     information from part (a)?
+	No we would need encrypted DNS
+	
     c. At the very beginning of an HTTPS, the client and server agree on a cipher suite
     to use and exchange encryption keys. How many cipher suites does the client
     support?
+	Content Type: Change Cipher Spec (20)
     d. What cipher suite does the server choose for the connection?
+	ECDH
     e. Who verified the server’s identity by signing their certificate?
+	Google Internet Authority
+
 4. One of the clients makes a number of requests to Facebook.
     a. Facebook processes logins over HTTPS, so that user’s passwords are
     encrypted. Despite this, what is insecure about the way that Facebook
