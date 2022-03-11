@@ -1,0 +1,24 @@
+1. Multiple devices are connected to the local network. For each one, list their MAC
+address, IP address, and general purpose (personal computer, router, server, etc).
+2. One of the clients connects to an FTP server during the trace.
+    a. What is the IP address and DNS hostname of the server it connects to?
+    b. Based on the packet capture, what’s one major vulnerability of the FTP protocol?
+    c. Name at least two other common network protocols that can be used in place of
+    FTP to provide secure file transfer.
+3. The trace shows that at least one of the clients makes HTTPS connections to sites other
+than Facebook. Pick one of these connections and answer the following:
+    a. What is the domain name of the site the client is connecting to?
+    b. Is there any way the HTTPS server can protect against the leak of domain name
+    information from part (a)?
+    c. At the very beginning of an HTTPS, the client and server agree on a cipher suite
+    to use and exchange encryption keys. How many cipher suites does the client
+    support?
+    d. What cipher suite does the server choose for the connection?
+    e. Who verified the server’s identity by signing their certificate?
+4. One of the clients makes a number of requests to Facebook.
+    a. Facebook processes logins over HTTPS, so that user’s passwords are
+    encrypted. Despite this, what is insecure about the way that Facebook
+    authenticates the user?
+    b. How could this allow an attacker to impersonate a user on Facebook?
+    c. How can this type of attack be prevented?
+    d. What did the user do on Facebook?    
