@@ -53,6 +53,10 @@ than Facebook. Pick one of these connections and answer the following:
     a. Facebook processes logins over HTTPS, so that user’s passwords are
     encrypted. Despite this, what is insecure about the way that Facebook
     authenticates the user?
+
     b. How could this allow an attacker to impersonate a user on Facebook?
+
     c. How can this type of attack be prevented?
-    d. What did the user do on Facebook?    
+
+    d. What did the user do on Facebook?
+    
