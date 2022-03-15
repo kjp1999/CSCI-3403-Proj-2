@@ -1,21 +1,17 @@
 1. Multiple devices are connected to the local network. For each one, list their MAC
 address, IP address, and general purpose (personal computer, router, server, etc).
 
-IPv4mcast_fb,	01:00:5e:00:00:fb, 
-Cisco-Li_31:10:7c,	00:12:17:31:10:7c, 
-Cisco_e8:18:00,	00:1f:6d:e8:18:00, 
-IPv4mcast_fc,	01:00:5e:00:00:fc, 
-IPv4mcast_fb,	01:00:5e:00:00:fb, 
-Apple_d8:0f:fa,	04:0c:ce:d8:0f:fa, 
-IPv6mcast_01:00:03,	33:33:00:01:00:03, 
-IPv6mcast_01:00:02,	33:33:00:01:00:02, 
-IntelCor_50:f0:a6,	8c:a9:82:50:f0:a6, 
-Apple_d8:0f:fa,	04:0c:ce:d8:0f:fa, 
-Apple_e5:66:07,	00:26:08:e5:66:07, 
-IPv6mcast_0c,	33:33:00:00:00:0c, 
-IPv4mcast_7f:ff:fa,	01:00:5e:7f:ff:fa, 
-Apple_e5:66:07,	00:26:08:e5:66:07, 
-Apple_e5:66:07,	00:26:08:e5:66:07, 
+IPv4mcast_fb,	01:00:5e:00:00:fb, server
+Cisco-Li_31:10:7c,	00:12:17:31:10:7c, router
+Cisco_e8:18:00,	00:1f:6d:e8:18:00, router
+IPv4mcast_fc,	01:00:5e:00:00:fc, server
+IPv6mcast_01:00:03,	33:33:00:01:00:03, server
+IPv6mcast_01:00:02,	33:33:00:01:00:02, server
+IntelCor_50:f0:a6,	8c:a9:82:50:f0:a6, PC
+Apple_d8:0f:fa,	04:0c:ce:d8:0f:fa, PC
+Apple_e5:66:07,	00:26:08:e5:66:07, PC
+IPv6mcast_0c,	33:33:00:00:00:0c, server
+IPv4mcast_7f:ff:fa,	01:00:5e:7f:ff:fa, server
 
 
 
@@ -54,9 +50,17 @@ than Facebook. Pick one of these connections and answer the following:
     encrypted. Despite this, what is insecure about the way that Facebook
     authenticates the user?
 
+    Cookies in HTTPS are sent in transit over plaintext
+
     b. How could this allow an attacker to impersonate a user on Facebook?
+
+    An attacker can use those cookies to access the account of which they correlate to
 
     c. How can this type of attack be prevented?
 
+    Use a content-security-protocol that prevents attackers from seeing them.
+
     d. What did the user do on Facebook?
+
+    They logged into their account and sent a message to someone.
     
